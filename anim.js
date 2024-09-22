@@ -14,7 +14,6 @@ var lyricsData = [
   { text: "No te apures, no detengas el instante del encuentro", time: 60 },
   { text: "Está dicho que es un hecho, no la pierdas, no hay derecho", time: 63 },
   { text: "No te olvides que la vida casi nunca está dormida", time: 70 },
-  { text: "[Música]", time: 81 },
   { text: "En ese bar tan desierto nos esperaba el encuentro", time: 94 },
   { text: "Ella llegó en limusina amarilla por supuesto", time: 101 },
   { text: "Él se acercó de repente y la miró tan de frente", time: 108 },
@@ -25,7 +24,6 @@ var lyricsData = [
   { text: "No te apures, no detengas el instante del encuentro", time: 140 },
   { text: "Está dicho que es un hecho, no la pierdas, no hay derecho", time: 146 },
   { text: "No te olvides que la vida casi nunca está dormida", time: 152 },
-  { text: "[Aplausos]", time: 162 },
   { text: "Flores amarillas", time: 168 },
   { text: "Ella sabía que él sabía", time: 175 },
   { text: "Que algún día pasaría", time: 180 },
@@ -36,7 +34,6 @@ var lyricsData = [
   { text: "Él sabía, ella sabía", time: 218 },
   { text: "Él sabía, ella sabía", time: 224 },
   { text: "Y se olvidaron de sus flores amarillas", time: 230 },
-  { text: "[Música]", time: 232 }
 ];
 
 
