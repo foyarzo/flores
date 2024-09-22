@@ -41,7 +41,7 @@ body {
 
 }
 .titulo {
-  margin-bottom: 220px;
+  margin-bottom: 180px;
   top: -.1em;
   font-family: "Arial Narrow", Arial, sans-serif;
   color: yellow;
@@ -1643,6 +1643,10 @@ h1 {
   /* Estilos para pantallas pequeñas */
   h1 {
       font-size: 1.5em;
+  }
+
+  .titulo{
+    font-size: 1.2em;
   }
 }
 
