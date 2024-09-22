@@ -10,25 +10,36 @@
   </head>
   <body class="container">
 <!-- Botón que solo aparecerá en la versión móvil -->
-<button id="playButton" style="display: none;">Reproducir audio</button>
+<button id="playButton" style="display: none; position: fixed; bottom: 90px; left: 50%; transform: translateX(-50%);">Reproducir audio</button>
 <audio id="audioPlayer" src="sound/floresamarillas.mp3" autoplay></audio>
-
+<div id="lyrics">
 <script>
   var playButton = document.getElementById('playButton');
   var audioPlayer = document.getElementById('audioPlayer');
+  var lyrics = document.getElementById('lyrics');
 
   // Detectar si la pantalla es de un tamaño móvil
   if (window.matchMedia("(max-width: 768px)").matches) {
     // Ocultar el audio automático y mostrar el botón en móviles
     audioPlayer.removeAttribute('autoplay');
     playButton.style.display = 'block';
-    
+    lyrics.style.width = '100%'; // Asegura que ocupe el 100% del ancho del contenedor
+    lyrics.style.color = 'yellow'; // Cambiar el color del texto
+    lyrics.style.position = 'relative'; // Controla la posición del texto dentro del contenedor
+    lyrics.style.bottom = '-400px'; // Ajustar la posición vertical (puedes cambiar el valor según sea necesario)
+    lyrics.style.left = '0px'; // Asegura que el texto esté alineado a la izquierda
+    lyrics.style.whiteSpace = 'normal'; // Permite que el texto se ajuste en múltiples líneas
+    lyrics.style.overflow = 'visible'; // Permite que el contenido no se recorte ni oculte
+    lyrics.style.alignItems = 'start'; // Alineación inicial del texto en el contenedor (en caso de uso de flexbox)
+    lyrics.style.fontSize = '1.5rem'; // Ajustar el tamaño del texto
+    lyrics.style.padding = '10px'; // Añadir relleno si es necesario
+
     playButton.addEventListener('click', function() {
       audioPlayer.play();
     });
   }
 </script>
-    <div id="lyrics">
+
      
     </div>
     <h1 class="titulo">Estas flores amarillas son un reflejo de la alegría que traes a mi vida, <br>Mi Puchungona. <br> <br> Gracias por iluminar mis días con tu presencia.</h1>
