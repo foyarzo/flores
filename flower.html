@@ -9,17 +9,25 @@
     <title>Flower</title>
   </head>
   <body class="container">
-    <button id="playButton">Reproducir audio</button>
-    <audio id="audioPlayer" src="sound/floresamarillas.mp3"></audio>
+<!-- Botón que solo aparecerá en la versión móvil -->
+<button id="playButton" style="display: none;">Reproducir audio</button>
+<audio id="audioPlayer" src="sound/floresamarillas.mp3" autoplay></audio>
+
+<script>
+  var playButton = document.getElementById('playButton');
+  var audioPlayer = document.getElementById('audioPlayer');
+
+  // Detectar si la pantalla es de un tamaño móvil
+  if (window.matchMedia("(max-width: 768px)").matches) {
+    // Ocultar el audio automático y mostrar el botón en móviles
+    audioPlayer.removeAttribute('autoplay');
+    playButton.style.display = 'block';
     
-    <script>
-      var playButton = document.getElementById('playButton');
-      var audioPlayer = document.getElementById('audioPlayer');
-    
-      playButton.addEventListener('click', function() {
-        audioPlayer.play();
-      });
-    </script>
+    playButton.addEventListener('click', function() {
+      audioPlayer.play();
+    });
+  }
+</script>
     <div id="lyrics">
      
     </div>
