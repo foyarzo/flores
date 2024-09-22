@@ -9,7 +9,17 @@
     <title>Flower</title>
   </head>
   <body class="container">
-    <audio src="sound/floresamarillas.mp3" autoplay></audio>
+    <button id="playButton">Reproducir audio</button>
+    <audio id="audioPlayer" src="sound/floresamarillas.mp3"></audio>
+    
+    <script>
+      var playButton = document.getElementById('playButton');
+      var audioPlayer = document.getElementById('audioPlayer');
+    
+      playButton.addEventListener('click', function() {
+        audioPlayer.play();
+      });
+    </script>
     <div id="lyrics">
      
     </div>
